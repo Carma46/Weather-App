@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <img class="weather-icon-large" src="Icons/sun.svg"
+        data-current-icon>
+        <div class="header-current-temp"><span data-current-temp> 31</span>&deg;</div>
+    </div>
+    <div class="header-right">
+        <div class="info-group">
+            <div class="label">High</div>
+            <div><span data-current-high> 32 </span>&deg;</div>
+        </div>
+        <div class="info-group">
+            <div class="label"> FL High</div>
+            <div><span data-current-fl-high> 32 </span>&deg;</div>
+        </div>
+        <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span data-current-wind> 32 </span><span class="value-sub-info">mph</span></div>
+        </div>
+        <div class="info-group">
+            <div class="label">Low</div>
+            <div><span data-current-low> 32 </span>&deg;</div>
+        </div>
+        <div class="info-group">
+            <div class="label">FL Low</div>
+            <div><span data-current-fl-low> 32 </span>&deg;</div>
+        </div>
+        <div class="info-group">
+            <div class="label">Precip</div>
+            <div><span data-current-precip> 0.1</span><span class="value-sub-info">in</span></div>
+        </div>      
+
+    </div>
+</header>
+<h1> Weather App</h1>
+  <input id="cityInput" type="text" placeholder="City">
+  <button><span onclick=addCity class="addBtn"> Add </span></button>
+  <h1 class="city"> why</h1>
+  <p>Temp: <span class="tempf"></span></p>
+  <p>Wind: <span class="wind"></span></p>
+  <script  src="main.js"></script>
+</body>
+</html>
